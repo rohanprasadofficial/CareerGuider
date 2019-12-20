@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1C1E"
+    tools:context=".ClassSelector">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="174dp"
+        android:layout_marginBottom="296dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375">
+
+        <TextView
+            android:id="@+id/textView_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="31dp"
+            android:text="Choose your class "
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/btn_classten"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:paddingTop="8.7dp"
+                    android:paddingBottom="8.71dp"
+                    android:text="Class 10"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="14dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/btn_classtwel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:paddingTop="8.7dp"
+                    android:paddingBottom="8.71dp"
+                    android:text="Class 12"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="14dp" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

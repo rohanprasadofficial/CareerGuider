@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/montserrat"
+                android:text="What are you interested in ?"
+                android:textColor="@color/greenSuccess"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:src="@drawable/confused" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="42.47dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:layout_marginTop="17.53dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:orientation="horizontal"
+                android:id="@+id/googleLoginCV"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/googleLoginBTN"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/montserrat"
+                        android:singleLine="true"
+                        android:text="Biology"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/black"
+                        android:textSize="8dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

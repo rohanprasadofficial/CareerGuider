@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E1C1E"
+    tools:context=".Login">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="174dp"
+        android:layout_marginBottom="296dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.375">
+
+        <TextView
+            android:id="@+id/textView_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="31dp"
+            android:layout_marginBottom="15dp"
+            android:text="Login to Career Guider"
+            android:textColor="@color/faintGreen"
+            android:textSize="15sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="31dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:id="@+id/edt_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4A484A"
+                android:hint="Username"
+
+                android:inputType="textEmailAddress"
+                android:paddingLeft="26dp"
+                android:paddingTop="15.44dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="15.31dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#BCBCBC"
+                android:textSize="14dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="10.25dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4A484A"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="26dp"
+                android:paddingTop="15.44dp"
+                android:paddingEnd="22dp"
+                android:paddingRight="22dp"
+                android:paddingBottom="15.31dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="#BCBCBC"
+                android:textSize="14dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:paddingTop="8.7dp"
+                    android:paddingBottom="8.71dp"
+                    android:text="LOGIN"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="14dp" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="Or"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="42.47dp"
+            android:layout_marginLeft="41.06dp"
+            android:layout_marginRight="41.06dp"
+            android:layout_marginTop="17.53dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:orientation="horizontal"
+            android:id="@+id/googleLoginCV"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:id="@+id/googleLoginBTN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/search" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingLeft="29.27dp"
+                    android:paddingTop="13.89dp"
+                    android:paddingBottom="13.27dp"
+                    android:singleLine="true"
+                    android:text="Login with google"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="8dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
