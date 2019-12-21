@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Are you interested in Accounting or want to Pursue CA ?"
+                android:textColor="@color/greenSuccess"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:src="@drawable/confused" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="42.47dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:layout_marginTop="17.53dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:orientation="horizontal"
+                android:id="@+id/googleLoginCV"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/biology"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/montserrat"
+                        android:singleLine="true"
+                        android:text="Yes"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:textSize="8dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Selecting this  gives you access to the various courses like Commerce,Accounting , CA etc. to pursue further."
+                android:textColor="@color/greenSuccess"
+                android:textSize="10sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="42.47dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:layout_marginTop="17.53dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:orientation="horizontal"
+                android:id="@+id/mathematicsCV"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/mathematics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@color/colorPrimary"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="No"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="8dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Selecting this will gives you access to the various courses like Arts,Civil Services to pursue further."
+                android:textColor="@color/greenSuccess"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

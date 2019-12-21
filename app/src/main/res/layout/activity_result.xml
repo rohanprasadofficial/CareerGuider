@@ -14,6 +14,7 @@
         android:layout_height="500dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
+        android:layout_margin="10dp"
         android:text="TAG"
         android:textColor="#16B51C"
         android:textSize="19dp" />

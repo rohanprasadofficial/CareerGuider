@@ -79,16 +79,39 @@ public class Dashboard extends AppCompatActivity {
                                     }
                                     else if (artsmarks>75){
 
-                                        startActivity(new Intent(getApplicationContext(),ArtsChoose.class));
+                                        startActivity(new Intent(getApplicationContext(),EconomicSelector.class));
                                         //arts path
                                         Toast.makeText(Dashboard.this, "S2", Toast.LENGTH_SHORT).show();
 
                                     }
                                     else{
 
+                                        AlertDialog.Builder builder = new AlertDialog.Builder(
+                                                Dashboard.this);
+                                        builder.setTitle("Interest Selector");
+                                        builder.setMessage("Are you interested in Economics ?");
+                                        builder.setNegativeButton("NO",
+                                                new DialogInterface.OnClickListener() {
+                                                    public void onClick(DialogInterface dialog,
+                                                                        int which) {
 
-                                        //Commerce path
-                                        Toast.makeText(Dashboard.this, "S3 ", Toast.LENGTH_SHORT).show();
+                                                        Intent intent=new Intent(getApplicationContext(),Result.class);
+                                                        intent.putExtra("TAG","According to the inputs, Career Guider provides Humanities(Without Economics) as the best choice for you.  \n Thank you for using Career Guider.");
+                                                        startActivity(intent);
+
+                                                    }
+                                                });
+                                        builder.setPositiveButton("YES",
+                                                new DialogInterface.OnClickListener() {
+                                                    public void onClick(DialogInterface dialog,
+                                                                        int which) {
+                                                        Intent intent=new Intent(getApplicationContext(),Result.class);
+                                                        intent.putExtra("TAG","According to the inputs, Career Guider provides Humanities(With Economics) as the best choice for you.  \n Thank you for using Career Guider.");
+                                                        startActivity(intent);
+                                                    }
+                                                });
+                                        builder.show();
+
 
                                     }
 

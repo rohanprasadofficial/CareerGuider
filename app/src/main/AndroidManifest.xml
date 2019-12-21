@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Result">
-
-        </activity>
+        <activity android:name=".EconomicSelector"></activity>
+        <activity android:name=".ArtsChoose" />
+        <activity android:name=".Result" />
         <activity android:name=".PCMChoose" />
         <activity android:name=".DashboardTwelve" />
         <activity android:name=".ClassSelector" />
@@ -26,6 +26,5 @@
         </activity>
         <activity android:name=".MainActivity" />
     </application>
-
 
 </manifest>
