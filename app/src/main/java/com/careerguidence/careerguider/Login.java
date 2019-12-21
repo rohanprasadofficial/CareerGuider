@@ -35,7 +35,6 @@ public class Login extends AppCompatActivity {
             btn_login=findViewById(R.id.btn_login);
             googleSignin=findViewById(R.id.googleLoginCV);
 
-
             googleSignin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -58,16 +57,16 @@ public class Login extends AppCompatActivity {
                         {
 
 
-//                                    if(username.getText().toString().equals("madhu-sit") && password.getText().toString().equals("test-password"))
-//                                    {
+                                    if(username.getText().toString().equals("madhu-sit") && password.getText().toString().equals("test-password"))
+                                    {
                                         alertDialog.dismiss();
                                         Toast.makeText(Login.this, "Login Successful", Toast.LENGTH_LONG).show();
                                         startActivity(new Intent(getApplicationContext(),ClassSelector.class));
-//                                    }
-//                                    else{
-//                                        alertDialog.dismiss();
-//                                        Toast.makeText(Login.this, "Invalid Credentials", Toast.LENGTH_LONG).show();
-//                                    }
+                                    }
+                                    else{
+                                        alertDialog.dismiss();
+                                        Toast.makeText(Login.this, "Invalid Credentials", Toast.LENGTH_LONG).show();
+                                    }
 
                         }
                         else
@@ -83,8 +82,6 @@ public class Login extends AppCompatActivity {
         {
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-
-
 
     }
 }

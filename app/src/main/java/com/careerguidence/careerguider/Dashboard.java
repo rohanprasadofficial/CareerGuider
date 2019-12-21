@@ -114,8 +114,6 @@ public class Dashboard extends AppCompatActivity {
 
 
                                     }
-
-
                                 }
                                 else{
                                     Toast.makeText(Dashboard.this, "There is problem with Mathematics marks , make sure that it is between 0 to 100 and not blank !", Toast.LENGTH_LONG).show();
@@ -145,12 +143,6 @@ public class Dashboard extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
 
 
 

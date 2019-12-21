@@ -13,7 +13,9 @@
         <activity android:name=".ArtsChoose" />
         <activity android:name=".Result" />
         <activity android:name=".PCMChoose" />
-        <activity android:name=".DashboardTwelve" />
+        <activity android:name=".DashboardTwelve"
+
+            />
         <activity android:name=".ClassSelector" />
         <activity android:name=".Dashboard" />
         <activity android:name=".Login" />
