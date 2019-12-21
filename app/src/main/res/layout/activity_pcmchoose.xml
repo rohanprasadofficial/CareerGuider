@@ -49,7 +49,7 @@
                 app:cardCornerRadius="8dp">
 
                 <LinearLayout
-                    android:id="@+id/googleLoginBTN"
+                    android:id="@+id/biology"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
@@ -65,12 +65,75 @@
                         android:gravity="center"
                         android:textAllCaps="true"
                         android:background="@color/colorPrimary"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:textSize="8dp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Studying biology gives you access to the various courses like MBBS , Pharmacy etc. to pursue further."
+                android:textColor="@color/greenSuccess"
+                android:textSize="10sp" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="42.47dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:layout_marginTop="17.53dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:orientation="horizontal"
+                android:id="@+id/mathematicsCV"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:id="@+id/mathematics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/montserrat"
+                        android:singleLine="true"
+                        android:text="Mathematics"
+                        android:gravity="center"
+                        android:textAllCaps="true"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@android:color/white"
+                        android:textSize="8dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="41.06dp"
+                android:layout_marginRight="41.06dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Studying maths gives you access to the various courses like Engineering, BCA etc. to pursue further."
+                android:textColor="@color/greenSuccess"
+                android:textSize="10sp" />
 
         </LinearLayout>
 

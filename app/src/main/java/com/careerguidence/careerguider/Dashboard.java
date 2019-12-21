@@ -70,15 +70,16 @@ public class Dashboard extends AppCompatActivity {
                                     float artsmarks=(socialsci + firstlanmarks + secondlanmarks)/3;
 
 
-                                    if(pmMarks >=75)
+                                    if(pmMarks >=75 )
                                     {
                                         Toast.makeText(Dashboard.this, "S1 ", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(getApplicationContext(),PCMChoose.class));
 
                                         //Science
                                     }
-                                    else if (artsmarks>75 ){
+                                    else if (artsmarks>75){
 
+                                        startActivity(new Intent(getApplicationContext(),ArtsChoose.class));
                                         //arts path
                                         Toast.makeText(Dashboard.this, "S2", Toast.LENGTH_SHORT).show();
 

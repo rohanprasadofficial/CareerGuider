@@ -27,9 +27,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
             android:fontFamily="@font/montserrat"
             android:paddingStart="31dp"
-            android:layout_marginBottom="15dp"
             android:text="Login to Career Guider"
             android:textColor="@color/faintGreen"
             android:textSize="15sp" />
@@ -92,10 +92,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
             android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
 
 
             <androidx.cardview.widget.CardView
@@ -126,27 +126,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:fontFamily="@font/montserrat"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="15dp"
-            android:text="Or"
+            android:fontFamily="@font/montserrat"
             android:gravity="center"
+            android:text="Or"
             android:textColor="#fff"
             android:textSize="15sp" />
 
 
-
         <androidx.cardview.widget.CardView
+            android:id="@+id/googleLoginCV"
             android:layout_width="match_parent"
             android:layout_height="42.47dp"
             android:layout_marginLeft="41.06dp"
-            android:layout_marginRight="41.06dp"
             android:layout_marginTop="17.53dp"
+            android:layout_marginRight="41.06dp"
             android:layout_weight="1"
             android:clickable="true"
             android:foreground="?attr/selectableItemBackgroundBorderless"
             android:orientation="horizontal"
-            android:id="@+id/googleLoginCV"
             app:cardBackgroundColor="#fff"
             app:cardCornerRadius="8dp">
 
@@ -184,5 +183,28 @@
 
 
     </LinearLayout>
+
+    <com.narayanacharya.waveview.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        android:layout_height="182.94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:waveAmplitude="10.25"
+        app:waveBackgroundColor="#00000000"
+        app:waveColor="@color/colorPrimary"
+        app:waveDensity="5.0"
+        app:waveFrequency="2.0"
+        app:waveNumberOfWaves="5"
+        app:wavePhaseShift="-0.05"
+        app:wavePrimaryLineWidth="3.0"
+        app:waveSecondaryLineWidth="1.0"
+        app:waveXAxisPositionMultiplier="0.5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

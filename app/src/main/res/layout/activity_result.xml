@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Result">
+
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="TAG"
+        android:textColor="#16B51C"
+        android:textSize="19dp" />
+
+    <com.narayanacharya.waveview.WaveView
+        android:id="@+id/waveView"
+        android:layout_width="match_parent"
+        android:layout_height="182.94dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-1dp"
+        app:waveAmplitude="10.25"
+        app:waveBackgroundColor="#00000000"
+        app:waveColor="@color/colorPrimary"
+        app:waveDensity="5.0"
+        app:waveFrequency="2.0"
+        app:waveNumberOfWaves="5"
+        app:wavePhaseShift="-0.05"
+        app:wavePrimaryLineWidth="3.0"
+        app:waveSecondaryLineWidth="1.0"
+        app:waveXAxisPositionMultiplier="0.5" />
+
+
+</RelativeLayout>
