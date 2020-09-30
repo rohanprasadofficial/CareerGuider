@@ -12,8 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class Dashboard extends AppCompatActivity {
-
-
+    
     TextView firstlan,secondlan,science,socialsc,maths;
     Button btn_predict;
     int flag;
@@ -70,9 +69,9 @@ public class Dashboard extends AppCompatActivity {
                                     float artsmarks=(socialsci + firstlanmarks + secondlanmarks)/3;
 
 
-                                    if(pmMarks >=75 )
+                                    if(pmMarks >= 80 )
                                     {
-                                        Toast.makeText(Dashboard.this, "S1 ", Toast.LENGTH_SHORT).show();
+                                       // Toast.makeText(Dashboard.this, "S1 ", Toast.LENGTH_SHORT).show();
                                         startActivity(new Intent(getApplicationContext(),PCMChoose.class));
 
                                         //Science
@@ -81,7 +80,7 @@ public class Dashboard extends AppCompatActivity {
 
                                         startActivity(new Intent(getApplicationContext(),EconomicSelector.class));
                                         //arts path
-                                        Toast.makeText(Dashboard.this, "S2", Toast.LENGTH_SHORT).show();
+                                       // Toast.makeText(Dashboard.this, "S2", Toast.LENGTH_SHORT).show();
 
                                     }
                                     else{
