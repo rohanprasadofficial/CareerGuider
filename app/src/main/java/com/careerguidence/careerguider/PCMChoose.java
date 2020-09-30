@@ -8,10 +8,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 public class PCMChoose extends AppCompatActivity {
-
-
     LinearLayout maths,bio;
-
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,13 +24,12 @@ public class PCMChoose extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent=new Intent(getApplicationContext(),Result.class);
-                intent.putExtra("TAG","According to the inputs, Career Guider provides PCM as the best choice for you. \n Thank you for using Career Guider.");
+                intent.putExtra("TAG","According to the inputs, PCM would be best choice for you. \n Thank you for using Career Guider.");
                 startActivity(intent);
                 //PCM Is Good choice
 
             }
         });
-
 
         bio.setOnClickListener(new View.OnClickListener() {
             @Override
