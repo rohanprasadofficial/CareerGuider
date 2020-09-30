@@ -7,11 +7,10 @@
     android:background="@android:color/white"
     tools:context=".Result">
 
-
     <TextView
         android:id="@+id/tag"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="490dp"
         android:fontFamily="@font/montserrat"
         android:gravity="center"
         android:layout_margin="10dp"
